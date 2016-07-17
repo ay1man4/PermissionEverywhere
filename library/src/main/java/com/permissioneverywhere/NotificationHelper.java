@@ -39,6 +39,7 @@ import android.support.v4.os.ResultReceiver;
         .setContentText(notificationText)
         .setAutoCancel(true)
         .setSound(defaultSoundUri)
+        .setVibrate(new long[0]) //A notification that vibrates is more likely to be presented as a heads-up notification 
         .setContentIntent(pendingIntent);
 
     NotificationManager notificationManager =
